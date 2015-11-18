@@ -26,7 +26,7 @@ func mkisofs(workdir string, adddir string, destdir string, isofile string){
     }
     cmd := exec.Command(mkisofs, "-R", "-V", "config-2", "-o", isofilepath, addirfilepath)
     fmt.Printf("Running %s %s %s %s.\n", mkisofs, strings.Join(cmd.Args[1:len(cmd.Args)-2], " "), isofile, adddir)
-    err := cmd.Run()
+    err = cmd.Run()
     if err != nil {
         log.Fatal(err)
     }
