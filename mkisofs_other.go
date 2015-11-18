@@ -8,6 +8,7 @@ import (
     "os"
     "os/exec"
     "path/filepath"
+    "strings"
 )
 
 func mkisofs(workdir string, adddir string, destdir string, isofile string){
