@@ -48,7 +48,7 @@ Options:
 
 	DEFAULT_ETCD_DISCOVERY := "https://discovery.etcd.io/TOKEN"
 
-	REGEX_SSH_FILE := regexp.MustCompile(`^ssh-(rsa|dss|ed25519) [-A-Za-z0-9+\/]+[=]{0,2} .+`)
+	REGEX_SSH_FILE := regexp.MustCompile(`^ssh-(rsa|dss|ed25519) [-A-Za-z0-9+\/]+[=]{0,2}`)
 
 	tmpl_text := `#cloud-config
 
